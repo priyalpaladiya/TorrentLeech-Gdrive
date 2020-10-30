@@ -148,7 +148,7 @@ async def youtube_dl_call_back(bot, update):
     # command_to_exec.append("--quiet")
     command_to_exec.append("--restrict-filenames")
     #
-    if "hotstar" in youtube_dl_url:
+    if "m3u8" in youtube_dl_url:
         command_to_exec.append("--geo-bypass-country")
         command_to_exec.append("IN")
     LOGGER.info(command_to_exec)
