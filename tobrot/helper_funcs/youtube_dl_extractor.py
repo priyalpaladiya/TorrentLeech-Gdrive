@@ -32,7 +32,7 @@ async def extract_youtube_dl_formats(url, cf_name, yt_dl_user_name, yt_dl_pass_w
         "-j",
         url
     ]
-    if "hotstar" in url:
+    if "m3u8" in url:
         command_to_exec.append("--geo-bypass-country")
         command_to_exec.append("IN")
     #
